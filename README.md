@@ -17,3 +17,8 @@ public static void main(String[] args){
  obj.print(30);
 } 
 }
+
+OUTPUT-
+30
+20
+10
