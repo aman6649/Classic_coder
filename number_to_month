@@ -1,51 +1,35 @@
-# number_to_month
 import java.util.Scanner;
-class distance{
- void num(int n){
-     int k=n,c=0,d=0,e=0;
-     while(k>0){
-         k/=10;
-         c++;
-     }
-     k=n;
-     if(c!=4){
-         System.out.println(n+" is not a valid car number");
-     }
-     else{
-         c=0;
-         while(k>0){
-             c=k%10;
-             e+=c;
-             if(c==3||c==5||c==7){
-                 d=1;
-             }
-              k/=10;
-         }
-         if(d==1){
-             if(e%3==0||e%5==0||e%7==0){
-                 System.out.println("Lucky number");
-                 
-             }
-             else{
-                 System.out.println(" Sorry it's not my lucky number");
-             }
-         }
-         else{
-             System.out.println(" Sorry it's not my lucky number");
-         }
-     }
+class months{
+  void numtomonth(int n){
+ switch(n){
+ case 1:System.out.println("JANUARY");break;
+ case 2:System.out.println("FEBRUARY");break;
+ case 3:System.out.println("MARCH");break;
+ case 4:System.out.println("APRIL");break;
+ case 5:System.out.println("MAY");break;
+ case 6:System.out.println("JUNE");break;
+ case 7:System.out.println("JULY");break;
+ case 8:System.out.println("AUGUST");break;
+ case 9:System.out.println("SEPTEMBER");break;
+ case 10:System.out.println("OCTOBER");break;
+ case 11:System.out.println("NOVEMBER");break;
+ case 12:System.out.println("DECEMBER");break;
+ default :System.out.println("error");
 }
-
-public static void main(String[] args){
+}
+ public static void main(String[] args){
 try{
  Scanner s=new Scanner(System.in);
- System.out.println("enter the distance travelled :");
- int b=s.nextInt();
- distance obj=new distance();
- obj.num(b);
+ System.out.println("enter the number");
+ int num =s.nextInt();
+ months obj=new months();
+ obj.numtomonth(num);
 }
- catch(Exception e){
+catch(Exception e){
  System.out.println("error");
 }
 }
+
 }
+
+
