@@ -54,7 +54,7 @@ try{
  obj.num(b);
 }
  catch(Exception e){
- System.out.println("error");
+ System.out.println("error"); 
 }
 }
 }
